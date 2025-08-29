@@ -1,8 +1,8 @@
 '''
-Задача:
-Є рядок "123". Перетвори його в ціле число, додай до нього 7 і виведи результат.
+Task:
+There is a string "123". Convert it to an integer, add 7 to it, and print the result.
 
-Підказка: використовуй int()
+Hint: use int()
 '''
 
 text = "123"
