@@ -1,15 +1,17 @@
 '''
-. Змінні
-Задача:
-Створи дві змінні: a = 5 і b = 10.
-Поміняй їх місцями (щоб a стало 10, а b — 5) без створення нової змінної.
+Variables
+Task:
+Create two variables: a = 5 and b = 10.
+Swap their values (so that a becomes 10, and b becomes 5) without creating a new variable.
 
-Підказка: можна скористатись одночасним присвоєнням.
+Hint: you can use simultaneous assignment.
 '''
+
 a = 5
 b = 10
-a = b
-b = a
-a = b - 5
-print(a)
-print(b)
+
+# swapping values
+a, b = b, a
+
+print(a)  # 10
+print(b)  # 5
