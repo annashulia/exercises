@@ -1,8 +1,8 @@
-number = float(input("Введіть число: "))
+number = float(input("Enter a number: "))
 
 if number > 0:
-    print("Число додатнє.")
+    print("The number is positive.")
 elif number < 0:
-    print("Число від’ємне.")
+    print("The number is negative.")
 else:
-    print("Число дорівнює нулю.")
+    print("The number is zero.")
