@@ -1,4 +1,4 @@
-summa = float(input())
-if summa > 1000:
-    summa = summa * 0.9
-print("Сума до сплати:", summa)
+amount = float(input("Enter the amount: "))
+if amount > 1000:
+    amount = amount * 0.9   # apply 10% discount
+print("Amount to pay:", amount)
