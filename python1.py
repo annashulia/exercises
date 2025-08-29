@@ -1,7 +1,7 @@
-num = int(input())
+num = int(input("Enter a number: "))
 if num > 0:
-    print("позитивне")
+    print("positive")
 elif num < 0:
-    print("від’ємне")
+    print("negative")
 else:
-    print("нуль")
+    print("zero")
