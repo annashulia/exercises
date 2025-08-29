@@ -1,13 +1,13 @@
 def add_numbers(a, b):
-    """Повертає суму двох чисел."""
+    """Returns the sum of two numbers."""
     return a + b
 
 def rectangle_area(a, b):
-    """Площа прямокутника."""
+    """Calculates the area of a rectangle."""
     return a * b
 
 def is_prime(num):
-    """Перевіряє, чи є число простим."""
+    """Checks whether a number is prime."""
     if num < 2:
         return False
     for i in range(2, int(num ** 0.5) + 1):
@@ -15,14 +15,14 @@ def is_prime(num):
             return False
     return True
 
-# Приклади викликів
-a = float(input("Введіть перше число для суми: "))
-b = float(input("Введіть друге число для суми: "))
-print("Сума:", add_numbers(a, b))
+# Example calls
+a = float(input("Enter the first number to add: "))
+b = float(input("Enter the second number to add: "))
+print("Sum:", add_numbers(a, b))
 
-x = float(input("Сторона a прямокутника: "))
-y = float(input("Сторона b прямокутника: "))
-print("Площа прямокутника:", rectangle_area(x, y))
+x = float(input("Side a of the rectangle: "))
+y = float(input("Side b of the rectangle: "))
+print("Area of the rectangle:", rectangle_area(x, y))
 
-n = int(input("Введіть число для перевірки на простоту: "))
-print(f"{n} є простим:", is_prime(n))
+n = int(input("Enter a number to check for primality: "))
+print(f"{n} is prime:", is_prime(n))
