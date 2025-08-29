@@ -1,28 +1,26 @@
-# 1. Перевірка знаку числа
-num = float(input("Введіть число (визначення знаку): "))
+# 1. Check the sign of a number
+num = float(input("Enter a number (to check its sign): "))
 if num > 0:
-    print("плюс")
+    print("positive")
 elif num == 0:
-    print("нуль")
+    print("zero")
 else:
-    print("мінус")
+    print("negative")
 
-print("-"*40)
 
-# 2. Вікова категорія
-age = int(input("Введіть вік: "))
+# 2. Age category
+age = int(input("Enter age: "))
 if age < 18:
-    print("неповнолітній")
+    print("minor")
 elif 18 <= age <= 59:
-    print("дорослий")
+    print("adult")
 else:
-    print("пенсіонер")
+    print("senior")
 
-print("-"*40)
 
-# 3. Перевірка парності числа
-num2 = int(input("Введіть число (перевірка парності): "))
+# 3. Check if a number is even or odd
+num2 = int(input("Enter a number (check even/odd): "))
 if num2 % 2 == 0:
-    print("парне")
+    print("even")
 else:
-    print("непарне")
+    print("odd")
