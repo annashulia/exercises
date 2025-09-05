@@ -19,14 +19,14 @@ print(update)
 
 #Find min and max from elements in the list
 
-min = list[0]
-max = list[0]
+min_val = list[0]
+max_val = list[0]
 
 for num in list:
-    if num > max:
-        max = num
-    elif num < min:
-        min = num
+    if num > max_val:
+        max_val = num
+    elif num < min_val:
+        min_val = num
 print("Min:", min)
 print("Max:", max)
 
