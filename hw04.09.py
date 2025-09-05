@@ -28,7 +28,7 @@ print("Max:", max)
 
 #Count the number of even and odd elements
 
-parity_counts = [0, 0]   # [чётные, нечётные]
+parity_counts = [0, 0]   # odd, even values
 for num in list:
     if num % 2 == 0:
         parity_counts[0] += 1
@@ -39,7 +39,7 @@ print("Odd numbers:", parity_counts[1])
 
 #Count the number of positive, negative and zero elements
 
-sign_counts = [0, 0, 0]  # [положительные, отрицательные, нули]
+sign_counts = [0, 0, 0]  #positive, negative and zero elements
 for num in list:
     if num > 0:
         sign_counts[0] += 1
