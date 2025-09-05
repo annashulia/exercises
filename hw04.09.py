@@ -18,41 +18,35 @@ for i in list:
 min = list[0]
 max = list[0]
 
-for i in range (len(list)):
-   if list[i] > max:
-     max = list[i]
-   elif list[i] < min:
-     min = list[i]
-      
+for num in list:
+    if num > max:
+        max = num
+    elif num < min:
+        min = num
 print("Min:", min)
 print("Max:", max)
 
 #Count the number of even and odd elements
 
-even_count = 0
-odd_count = 0
-for number in list:
-     if number % 2 == 0:
-         even_count += 1
-     elif number % 2 == 1:
-         odd_count += 1
-
-print("Even numbers:", even_count)
-print("Odd numbers:", odd_count)
+parity_counts = [0, 0]   # [чётные, нечётные]
+for num in list:
+    if num % 2 == 0:
+        parity_counts[0] += 1
+    else:
+        parity_counts[1] += 1
+print("Even numbers:", parity_counts[0])
+print("Odd numbers:", parity_counts[1])
 
 #Count the number of positive, negative and zero elements
 
-positive_count = 0
-negative_count = 0
-zero_count = 0
-for number in list:
-    if number > 0:
-        positive_count += 1
-    elif number < 0:
-        negative_count += 1
-    else: 
-        zero_count += 1
-
-print("Positives:", positive_count)
-print('Negatives:', negative_count) 
-print("Zeros:", zero_count) 
+sign_counts = [0, 0, 0]  # [положительные, отрицательные, нули]
+for num in list:
+    if num > 0:
+        sign_counts[0] += 1
+    elif num < 0:
+        sign_counts[1] += 1
+    else:
+        sign_counts[2] += 1
+print("Positives:", sign_counts[0])
+print("Negatives:", sign_counts[1])
+print("Zeros:", sign_counts[2])
