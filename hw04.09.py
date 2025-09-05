@@ -3,15 +3,19 @@ list = [1, 4, 7, -9]
 total = 0 
 
 for element in list:
-    total += 1
+    total += 1    
+    
+
 print("Number of elements:", total) 
 
 #Find product of elements in the list
 
 update = 1
 for i in list:
-    update *= i   
-    print(update)
+    update *= i 
+
+print(update)
+
 
 #Find min and max from elements in the list
 
