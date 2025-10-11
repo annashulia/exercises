@@ -19,22 +19,20 @@ print("Removed 1 from arr1 using index", list(arr1))
 print("arr2 after removing 5:", list(arr2))
 
 
-
-def bubble_sorted(a: array.array) -> array.array:
-    b = array.array(a.typecode, a)  
-    n = len(b)
-    for i in range(n):
+def bubble_sort_with_swaps(a: array.array):
+    for n in range(len(a) - 1, 0, -1):
         swapped = False
-        for j in range(0, n-1-i):
-            if b[j] > b[j+1]:
-                b[j], b[j+1] = b[j+1], b[j]
+        for i in range(n):
+            if a[i] > a[i + 1]:
+                a[i], a[i + 1] = a[i + 1], a[i]
                 swapped = True
+                print(list(a))
         if not swapped:
             break
-    return b
 
-arr = array.array('i', [5, 3, 8, 1, 2])
-print("Original:", list(arr))
-sorted_arr = bubble_sorted(arr)
-print("Sorted (bubble):", list(sorted_arr))
+print("Start:", list(arr1))
+bubble_sort_with_swaps(arr1)
+print("Sorted array is:")
+print(list(arr1))
+
 
